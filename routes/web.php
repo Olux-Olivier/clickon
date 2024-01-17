@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 /*
-|--------------------------------------------------------------------------
+|-------------------------------------------------------------------------->
 | Web Routes
 |--------------------------------------------------------------------------
 |
@@ -13,6 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+
+Route::get('/index',[App\Http\Controllers\BlogController::class,'index'])->name('index');
+
+Route::get('/show/{id}',[App\Http\Controllers\BlogController::class,'show'])->name('blog.show');
+
+
+
