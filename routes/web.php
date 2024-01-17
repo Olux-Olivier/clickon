@@ -13,11 +13,3 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
-
-Route::get('/index',[App\Http\Controllers\BlogController::class,'index'])->name('index');
-
-Route::get('/show/{id}',[App\Http\Controllers\BlogController::class,'show'])->name('blog.show');
-
-
-
